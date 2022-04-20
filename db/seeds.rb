@@ -296,6 +296,46 @@ Brush the top of the pastries with the remaining egg yolk mixture.
 Step 12
 Bake in the preheated oven until golden brown, about 15 minutes. Cool for 5 minutes on the baking sheets, then transfer pastries to wire racks. Serve warm or at room temperature.")
 
+r9 = Recipe.create(pastry_id: p4.id, name: "Vegetarian Pasties", user_id: u5.id, rating: 3.2, description: "I came up with this recipe because I wanted a vegetarian version.", prep_time: "40 minutes", bake_time: "30 minutes", total_time: "2 hours", recipe_ingredients: "3 cups all-purpose flour
+
+1 teaspoon salt
+
+½ teaspoon baking powder
+
+1 cup butter
+
+4 eggs
+
+2 teaspoons distilled white vinegar
+
+3 ½ cups water
+
+1 cup dry lentils
+
+3 potatoes, chopped
+
+1 onion, chopped
+
+1 tablespoon olive oil
+
+1 teaspoon salt", recipe_instructions: "Step 1
+Preheat oven to 350 degrees F (175 degrees C).
+
+Step 2
+Make the dough: mix flour, salt and baking powder together in a medium size mixing bowl. Cut in butter. Stir in egg, vinegar and 1/2 cup water. Continue stirring until dough is moist enough to be formed into a ball (add more water if necessary). Form the dough into a large ball.
+
+Step 3
+Make the filling: bring a pot of 3 cups water to boil, add lentils and continue to boil for 30 to 45 minutes; until lentils are tender. Watch the lentils and add water if necessary.
+
+Step 4
+Wrap the potatoes in aluminum foil and bake them for 30 minutes in the preheated oven. When the potatoes have cooled cut them into small pieces and mix them with the lentils.
+
+Step 5
+In a frying pan saute onions with oil. Stir the onions into the potato-lentil mixture; season with salt and stir.
+
+Step 6
+Divide the dough into 6 - 8-inch circles. Lay the circles on a flat, floured surface. Place one cup of filling into the center of each circle. Fold the dough around the filling; seal the edges and arrange the pasties on an ungreased cookie sheet. Bake for one hour in the preheated oven.")
+
 
 
 puts "✅ Done seeding!"

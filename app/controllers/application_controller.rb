@@ -12,6 +12,11 @@ class ApplicationController < Sinatra::Base
     pastry.to_json
   end
 
+  get "/recipe/:name" do
+    recipe = Recipe.where("name LIKE ?", "%#{params[:name]}%")
+    recipe.to_json
+  end
+
   get "/top" do
     recipe_top = Recipe.order(:rating).limit(2)
     recipe_top.to_json
