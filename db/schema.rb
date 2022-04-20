@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(version: 2022_04_17_193952) do
     t.string "flag"
     t.string "name"
     t.string "capital_city"
-    t.string "sport"
   end
 
   create_table "pastries", force: :cascade do |t|
