@@ -43,6 +43,13 @@ class ApplicationController < Sinatra::Base
     pastry.to_json
   end
 
+
+  delete "/recipe/:name" do
+    recipe = Recipe.where(params[:name])
+    recipe.destroy
+    recipe.to_json
+  end
+
   # post "/add-pastry" do
   #   new_pastry = Pastry.create(
   #     photo: params[:photo],
@@ -57,13 +64,6 @@ class ApplicationController < Sinatra::Base
   #     name: params[:name]
   #   )
   # end
-
-
-  delete "/recipe/:name" do
-    recipe = Recipe.where(params[:name])
-    recipe.destroy
-    recipe.to_json
-  end
 
   # post "/add-country" do
   #   new_country = Country.create(
