@@ -4,7 +4,6 @@ class CreateCountries < ActiveRecord::Migration[6.1]
       t.string :flag
       t.string :name
       t.string :capital_city
-      t.string :sport
     end
   end
 end
