@@ -38,14 +38,14 @@ class ApplicationController < Sinatra::Base
   end
 
   patch "/pastry/:name" do
-    pastry = Pastry.find(params[:name])
+    pastry = Pastry.where(name: params[:name])
     pastry.update({photo:params[:photo], name:params[:name], description:params[:description]})
     pastry.to_json
   end
 
 
-  delete "/recipe/:name" do
-    recipe = Recipe.where(params[:name])
+  delete "/delete/:id" do
+    recipe = Recipe.find(params[:id])
     recipe.destroy
     recipe.to_json
   end
